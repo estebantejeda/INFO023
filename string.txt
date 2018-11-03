@@ -1,0 +1,111 @@
+<String>.length()
+
+Retorna la cantidad de caracteres que tiene la String
+
+String cadena = “Universidad Austral”;
+int a = cadena.length();
+>La variable “a” contendrá 19
+
+------------------------------------------------------
+
+int indexOf(<String>) 
+
+Retorna el índice o posición donde aparece por primera vez la String o char
+que se recibe como parámetro, o un -1 si no la encuentra
+*Recuerde que la primera posición es cero. 
+
+String cadena = "San Jose";
+int posicion = cadena.indexOf("Jose");
+>Ahora posición contiene un 4
+int a = cadena.indexOf(‘o’);
+>Ahora la variable a contiene un 5
+
+-----------------------------------------------------
+
+boolean equals(String str): 
+
+Compara la hilera que invoca al método con la del parámetro. Si
+son iguales retorna true y si nó, retorna false. Es sensitivo a
+mayúsculas y minúsculas.
+
+String cadena1 = “alajuela"
+String cadena2 = “Alajuela”;
+if (cadena1.equals(cadena2)){
+out.println(“Son iguales”);
+} 
+else{
+out.println(“Son diferentes”);
+}
+>La impresión será: Son diferentes 
+
+------------------------------------------------------
+
+boolean equalsIgnoreCase (String str) 
+
+Compara la hilera que invoca al método con la del parámetro. Si
+son iguales retorna true y si nó, retorna false. No es sensitivo a
+mayúsculas y minúsculas.
+
+String cadena1 = “alajuela";
+String cadena2 = “Alajuela”;
+if (cadena1.equalsIgnoreCase(cadena2)){
+out.println(“Son iguales”);
+}
+else{
+out.println(“Son diferentes”);
+}
+>La impresión será: Son iguales 
+
+-----------------------------------------------------
+
+char charAt (int indice)
+
+Devuelve el carácter que ocupa la posición indicada por el índice.
+
+String cadena = "Polimorfismo";
+out.println(cadena.charAt(4));
+>Impresión : m
+
+char caracter = cadena.charAt(4);
+Ahora carácter contiene ‘m’
+
+------------------------------------------------------
+
+<String>.substring(int inicio, int final)
+
+Selecciona los caracteres desde una posicion hasta otra
+
+String frases = "Esta linea esta completita";
+String a = frases.substring(5, 10);
+System.out.println(a);
+>La impresion sera: linea
+
+------------------------------------------------------
+
+<String>.toLowerCase()
+<String>.toUpperCase()
+
+Convierte el caracter String a mayuscula o minuscula
+
+String frases = "ola k ase";
+String conversion = frases.toUpperCase();
+System.out.println(conversion);
+>La impresion sera: OLA K ASE
+
+-------------------------------------------------------
+
+<String1>.concat(<String2>)
+
+Concatena dos String
+
+String frase1 = hola amigos;
+String frase2 = hola mundo;
+frase1.concat(frase2);
+
+System.out.println()
+
+----------------------------------------------------
+
+Character.toString(<char>)
+
+convierte un char a String
